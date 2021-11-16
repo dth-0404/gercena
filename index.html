@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta property="og:type" content="website">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="Cache-control" content="no-cache">
+   <meta http-equiv="Expires" content="-1">
+   <meta name="robots" content="noodp,noydir">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="google-site-verification" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:site_name" content="Gercena">
+   <meta property="og:url" content="">
+   <meta name="description" content="Gercena">
+   <meta property="og:description" content="Gercena">
+   <meta property="og:title" content="Gercena">
+   <link rel="icon" type="image/png" href="./images/product.jpg">
+   <title>Gercena</title>
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/font-awesome.min.css">
+   <link rel="stylesheet" href="./css/aos.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+   <a id="button_scroll_top" class="show"><i class="fa fa-arrow-up"></i></a>
+   <a id="calltrap-btn" class="b-calltrap-btn calltrap_offline hidden-phone visible-tablet pulse-2" href="tel:02873070789">
+      <div id="calltrap-ico"></div>
+   </a>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <div class="container-fluid"> -->
+      <a class="navbar-brand" href="./index.html">
+         <img src="./images/logo.png" alt="" />
+      </a>
+      <div class="d-flex align-items-center">
+         <div class="dropdown dropdown-mobile">
+            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-expanded="false">
+               <img src="./images/vn.png" alt="" />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <li>
+                  <a class="dropdown-item" href="#">
+                     <img src="./images/vn.png" alt="" />
+                     <span>Tiếng Việt</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="dropdown-item" href="#">
+                     <img src="./images/germany.svg" alt="" />
+                     <span>Tiếng Đức</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <button id="default" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars text-dark"></i>
+         </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+               <a class="nav-link active" href="./index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./gioithieu.html">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./cauhoi.html">CÂU HỎI THƯỜNG GẶP</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./blog.html">KIẾN THỨC SỨC KHỎE</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./lienhe.html">LIÊN HỆ</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="./images/vn.png" alt="" />
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                     <a class="dropdown-item" href="#">
+                        <img src="./images/vn.png" alt="" />
+                        <span>Tiếng Việt</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="dropdown-item" href="#">
+                        <img src="./images/germany.svg" alt="" />
+                        <span>Tiếng Đức</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <button id="shown" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-times text-white"></i>
+         </button>
+      </div>
+      <!-- </div> -->
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog section-7">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                     Đặt hàng chính hãng
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div id="forms" class="form modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h6>#Giảm giá 50%</h6>
+                  <div class="sale row">
+                     <div class="left">
+                        <p>1.580.000 đ</p>
+                        <p>Giá chỉ còn</p>
+                     </div>
+                     <div class="right">
+                        <p>790.000 đ</p>
+                     </div>
+                  </div>
+                  <form action="">
+                     <input type="text" name="name" placeholder="*Tên của bạn" />
+                     <input type="text" name="phone" placeholder="*Số điện thoại" onkeypress="validate(event)" />
+                     <button type="submit">Đặt hàng</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End modal -->
+   </nav>
+   <section id="section-1" class="section-1">
+      <div class="banner1">
+         <div class="row">
+            <div class="col-xxl-6 col-xl-7 col-lg-12 col-md-12 col-sm-12 section-1-content">
+               <div class="bg-section-1-content">
+                  <h2>ĐÁI THÁO ĐƯỜNG ẢNH HƯỞNG ĐẾN <br>
+                     CUỘC SỐNG NHƯ THẾ NÀO?
+                  </h2>
+                  <p>Đái tháo đường là căn bệnh phổ biến xuất hiện ở rất nhiều người có chế độ ăn uống và lối sống
+                     không lành mạnh. Đây là kết quả của việc thiếu hụt insulin, bệnh được chia làm 2 loại: tuýp
+                     1 và tuýp 2. Bệnh tiểu đường tuýp 1 là triệu chứng bệnh xảy ra khi hệ thống miễn dịch tấn
+                     công nhầm vào các tế bào tuyến tụy sản xuất insulin và phá hủy chúng. Còn tiểu đường tuýp 2
+                     xuất hiện khi lượng insulin cần thiết không cung cấp đủ cho cơ thể. Dù mắc phải tiểu đường
+                     loại nào thì cuộc sống của người bệnh cũng bị ảnh hưởng đáng kể. <br><br>
+                     Đái tháo đường sẽ cản trở bạn tận hưởng cuộc sống bởi những tác động đến tâm lý và sức khỏe
+                     như thể trạng mệt mỏi, chế độ ăn uống hà khắc, phải duy trì thói quen kiểm tra đường huyết,
+                     uống thuốc mỗi ngày,... Đặc biệt nếu không có hướng điều trị kịp thời sẽ dẫn đến những biến
+                     chứng nguy hiểm đe dọa sức khỏe. Do đó người bệnh đái tháo đường cần xây dựng lối sống lành
+                     mạnh, sống lạc quan để hướng đến mục tiêu kiểm soát căn bệnh hiệu quả.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="section-2" class="section-2">
+      <div class="banner2">
+         <img src="./images/decor.png" alt="" class="section-2-img-left">
+         <img src="./images/decor.png" alt="" class="section-2-img-right">
+         <div class="row">
+            <div class="col-lg-4 col-md-12  col-12">
+               <div class="section-2-img">
+                  <img src="./images/section-2-img.png" alt="" class="section-2-content-img w-100">
+               </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12">
+               <div class="section-2-content">
+                  <div class="title section-2-title">BIẾN CHỨNG BỆNH TIỂU ĐƯỜNG NẾU KHÔNG ĐƯỢC CHỮA TRỊ KỊP THỜI
+                  </div>
+                  <p>Đái tháo đường là một bệnh nội tiết chuyển hoá đặc trưng bởi sự tăng đường glucose máu mạn
+                     tính. Nếu không có hướng kiểm soát căn bệnh kịp thời sẽ dẫn đến những biến chứng nguy hiểm
+                     đến sức khỏe người bệnh, điển hình là các bộ phận như tim, mắt, tứ chi, thận, mắt. <br><br>
+                     So với người bình thường thì người đã mắc bệnh tiểu đường có khả năng tăng nguy cơ mắc bệnh
+                     tim mạch lên đến 3 lần. Bên cạnh đó, dấu hiệu nhiễm khuẩn, mù lòa, tổn thương thận, đột
+                     quỵ,.... cũng chiếm phần trăm rất cao nếu không chữa trị đái tháo đường kịp thời. Biết được
+                     tầm nguy hiểm của bệnh đối với sức khỏe, bạn hãy phát hiện sớm những thay đổi của cơ thể và
+                     xây dựng một lối sống lành mạnh.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="section-3" class="section-3">
+      <div class="row">
+         <div class="col-lg-7 col-md-12 col-12">
+            <div class="section-3-content">
+               <div class="section-3-title">TẠI SAO NÊN DÙNG GERCENA DIABETES</div>
+               <p>Đái tháo đường là bệnh mạn tính và gây nhiều biến chứng nguy hiểm khó kiểm soát, do đó người bệnh
+                  cần có thái độ bình tĩnh để sắp xếp lại sinh hoạt, chế độ ăn uống và cách sống sao cho phù hợp
+                  với tình trạng bệnh. Bên cạnh đó, việc sử dụng các sản phẩm hỗ trợ cũng đóng góp quan trọng
+                  trong việc bảo vệ sức khỏe người bệnh. <br><br>
+                  Thực phẩm bảo vệ sức khỏe Gercena Diabets là sản phẩm được sản xuất từ các thành phần tự nhiên
+                  giúp hỗ trợ hạn chế tăng đường huyết và giúp ổn định đường huyết, ngăn ngừa nguy cơ biến chứng
+                  do tiểu đường.
+               </p>
+            </div>
+         </div>
+         <div class="col-lg-5 col-md-12 col-12">
+            <div class="section-3-img">
+               <div class="row">
+                  <div class="col-lg-5 col-md-5 col-6">
+                     <div class="section-3-img-small small-1">
+                        <img src="./images/gercena-diabets-04.png" class="w-100" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-6">
+                     <div class="section-3-img-big big-1">
+                        <img src="./images/gercena-diabets-01.png" class="w-100" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-6">
+                     <div class="section-3-img-big">
+                        <img src="./images/gercena-diabets-03.png" class="w-100" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-6">
+                     <div class="section-3-img-small">
+                        <img src="./images/gercena-diabets-02.png" class="w-100" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <div class="section-4" id="section-4">
+      <div class="section-4-bg">
+         <div class="section-4-content-bg">
+            <div class="section-4-content">
+               <div class="section-4-title">
+                  <h4>CÂU HỎI THƯỜNG GẶP VỀ BỆNH TIỂU ĐƯỜNG</h4>
+               </div>
+               <p>Đái tháo đường còn được biết là căn bệnh của thế kỷ, biến chứng để lại của bệnh ảnh hưởng nguy
+                  hiểm đến sức khỏe của người bệnh như mất thị lực, hoại tử chân tay, nhồi máu cơ tim, đột quỵ,
+                  tổn thương thận,... Để phòng ngừa căn bệnh hiệu quả, người bệnh và người thân chăm sóc cần phải
+                  trang bị kiến thức chính xác cũng như kỹ năng cần thiết để đồng hành cùng quá trình chữa bệnh
+                  thông qua những thắc mắc từ bệnh nhân khác và lời giải đáp khoa học từ chuyên gia.
+               </p>
+               <a href="cauhoi.html" target="_blank"><button class="btn-sec-4">XEM THÊM</button></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section-tp" id="section-tp">
+      <div class="banner-tp">
+         <img src="./images/decor.png" alt="" class="section-tp-img-left">
+         <div class="title section-tp-title">THÀNH PHẦN CỦA GERCENA DIABETS GỒM NHỮNG GÌ?</div>
+         <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="section-tp-card section-tp-card-1">
+                  <div class="section-tp-img">
+                     <img src="./images/tp1.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-tp-card-content">
+                     <h4>Cao Dây thìa canh</h4>
+                     <p>Đây là nguyên liệu phổ biến có công dụng kích thích quá trình bài tiết chuyển hóa đường,
+                        ức chế quá trình hấp thụ đường ở các bộ phận trong cơ thể, từ đó lượng glucose sử dụng ở
+                        mô tế bào sẽ tăng lên, đường huyết được kiểm soát dễ dàng ở mức an toàn, ổn định.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="section-tp-card section-tp-card-1">
+                  <div class="section-tp-img">
+                     <img src="./images/tp2.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-tp-card-content">
+                     <h4>Cao quả Mướp đắng</h4>
+                     <p>Mướp đắng là thành phần quen thuộc để chuyển hóa chất charantin, polypeptid-P và vicine
+                        nhanh chóng. Ngoài ra, nguyên liệu này còn có khả năng ức chế sự chuyển hóa và hấp thu
+                        đường trong cơ thể, ổn định đường huyết ở mức cho phép và ngăn ngừa biến chứng hiệu quả
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="section-tp-card section-tp-card-1">
+                  <div class="section-tp-img">
+                     <img src="./images/tp3.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-tp-card-content">
+                     <h4>Cao Nấm Linh Chi</h4>
+                     <p>Chứa germanium, polysaccharides, steroids, axit ganoderic, hoạt chất Adenosine,
+                        Triterpenoid đây đều là những thành phần có khả năng ức chế quá trình tích tụ mỡ trong
+                        máu, kiểm soát quá trình kiểm soát lượng đường trong máu, ổn định huyết áp hiệu quả, an
+                        toàn.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="section-tp-card section-tp-card-1">
+                  <div class="section-tp-img">
+                     <img src="./images/tp4.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-tp-card-content">
+                     <h4>Cao quả nhàu</h4>
+                     <p>Tổng hợp gồm 29 loại axit hữu cơ, tinh dầu và nhiều loại axit amin, caroten, vitamin C,
+                        sắt, Mg, Ca, K, Na. Đây đều là dưỡng chất có lợi cho sức khỏe, hỗ trợ giảm lượng đường
+                        trong máu, ổn định đường huyết hiệu quả, ngăn chặn quá trình hình thành mỡ máu và bảo vệ
+                        sức khỏe.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="section-tp-card section-tp-card-1">
+                  <div class="section-tp-img">
+                     <img src="./images/tp5.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-tp-card-content">
+                     <h4>Tảo Spirulina</h4>
+                     <p>Một nguyên liệu bổ dưỡng không thể thiếu bởi sự kết hợp từ các protein, sắt, kali, magie
+                        và nhiều khoáng chất khác nhằm ổn định huyết áp, giữ trọng lượng của cơ thể ở mức cho
+                        phép, kiểm soát căn bệnh đái tháo đường hiệu quả, ngăn ngừa biến chứng nguy hiểm.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+               <div class="section-tp-card section-tp-card-1">
+                  <div class="section-tp-img">
+                     <img src="./images/tp6.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-tp-card-content">
+                     <h4>Beta Glucan</h4>
+                     <p>Giúp kiểm soát lượng cholesterol trong máu, cân bằng lượng mỡ trong máu, hỗ trợ quá trình
+                        kiểm soát bệnh tiểu đường. Ngoài ra còn giúp tăng cường hệ miễn dịch, ổn định huyết áp
+                        trong cơ thể, bảo vệ sức khỏe tránh khỏi các tác động nguy hiểm làm ảnh hưởng đến cơ
+                        thể.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section-cs" id="section-cs">
+      <div class="banner-cs">
+         <div class="title section-cs-title">CHIA SẺ CỦA CHUYÊN VIÊN TƯ VẤN VỀ GERCENA DIABETS</div>
+         <div class="row pdt-100">
+            <div class="col-lg-8 col-md-12 col-12">
+               <div class="section-cs-content">
+                  <p>Có hơn 30 năm làm việc trong ngành và chứng kiến nhiều hoàn cảnh bệnh nhân phải khổ sở vì căn
+                     bệnh đái tháo đường, tôi cảm thấy thấu hiểu và muốn giúp họ một điều gì đó. Quyết tâm này đã
+                     dẫn tôi bước vào con đường nghiên cứu về sản phẩm Gercena DIABETS này. Có thể nói đây là
+                     giải pháp thiết thực hiện nay dành cho bệnh nhân tiểu đường. <br><br>
+                     Trước nhất là thành phần từ thiên nhiên nên rất an toàn, không gây tác dụng phụ. Thêm vào đó
+                     đây là sản phẩm được sản xuất trên dây chuyền công nghệ hiện đại của Đức nên giúp phát huy
+                     các công dụng của các thành phần, sản phẩm có tác dụng lâu dài, hiệu quả nhanh chóng. Có
+                     Gercena DIABETS, người bệnh tiểu đường có thể yên tâm tận hưởng cuộc sống mà không cần lo sợ
+                     các biến chứng.
+                  </p>
+                  <div class="cs-content-img">
+                     <img src="./images/expert.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12">
+               <div class="section-cs-img">
+                  <img src="./images/img-cs.png" class="w-100" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section-cn" id="section-cn">
+      <div class="title section-cn-title">CẢM NHẬN CỦA KHÁCH HÀNG VỀ GERCENA DIABETS</div>
+      <div class="pdt-50">
+
+         <iframe class="section-cn-video" width="1237" height="696" src="https://www.youtube.com/embed/8-ROoDovMSk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+      </div>
+   </div>
+   <section class="section-6" id="section-6">
+      <div class="title">CÂU HỎI THƯỜNG GẶP VỀ GERCENA DIABETS</div>
+      <div class="section-6-content">
+         <p>Đái tháo đường vốn dĩ là một căn bệnh thầm lặng. Đến khi bệnh biểu hiện ra bên ngoài để chúng ta dễ nhận
+            biết thì đã ở giai đoạn biến chứng. Vì vậy trang bị cho mình những kiến thức đúng đắn về bệnh là việc
+            làm cần thiết qua những thắc mắc xoay quanh sản phẩm Gercena Diabetes sau đây:
+         </p>
+      </div>
+      <ul class="list-ques aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500">
+         <li data-ques="box-1">
+            <span class="sort sort1">
+               <p>#01</p>
+            </span>
+            <p>Hướng dẫn sử dụng sản phẩm</p>
+            <div class="icon-list-ques"><i class="fa fa-angle-down"></i></div>
+         </li>
+         <div class="text-ques" id="box-1" style="display: block;" data-status="block">
+            <p>Sử dụng sản phẩm đúng cữ, đúng liều lượng sẽ giúp kiểm soát căn bệnh đái tháo đường hiệu quả, liêu
+               dùng như sau: uống 1-2 viên / lần / ngày. Thực phẩm này không phải là thuốc, không có tác dụng thay
+               thế thuốc chữa bệnh . Khuyến cáo: Không dùng cho người mẫn cảm với bất kỳ thành phần nào của sản
+               phẩm . Trường hợp tiểu đường phụ thuộc insulin cần tham khảo ý kiến thầy thuốc trước khi dùng
+            </p>
+         </div>
+         <li data-ques="box-2">
+            <span class="sort sort2">
+               <p>#02</p>
+            </span>
+            <p>Sản phẩm dùng cho đối tượng nào?</p>
+            <div class="icon-list-ques"><i class="fa fa-angle-down"></i></div>
+         </li>
+         <div class="text-ques" id="box-2" style="display: none;" data-status="none">
+            <p>Sản phẩm dùng cho đối tượng bị rối loạn dung nạp đường huyết, bị tiểu đường.
+            </p>
+         </div>
+         <li data-ques="box-3">
+            <span class="sort sort3">
+               <p>#03</p>
+            </span>
+            <p>Sản phẩm có tác dụng phụ nào hay không?</p>
+            <div class="icon-list-ques"><i class="fa fa-angle-down"></i></div>
+         </li>
+         <div class="text-ques" id="box-3" style="display: none;" data-status="none">
+            <p>Vì được chiết xuất từ thành phần thiên nhiên nên không xảy ra bất kỳ phản ứng phụ nào ảnh hưởng đến
+               sức khỏe của người dùng.
+            </p>
+         </div>
+         <li data-ques="box-4">
+            <span class="sort sort4">
+               <p>#04</p>
+            </span>
+            <p>Sử dụng GERCENA DIABETS bao lâu thì hết bệnh?</p>
+            <div class="icon-list-ques"><i class="fa fa-angle-down"></i></div>
+         </li>
+         <div class="text-ques" id="box-4" style="display: none;" data-status="none">
+            <p>Khi phát hiện bị quên và dẫn đến bỏ sót một liều uống thì hãy bình tĩnh dùng liều tiếp theo đúng giờ
+               và tuyệt đối không được dùng gấp đôi ảnh hưởng đến sức khỏe.
+            </p>
+         </div>
+      </ul>
+   </section>
+   <section id="section-7" class="section-7 row">
+      <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-none col-12">
+         <div class="img" data-aos="zoom-in-down" data-aos-duration="1500">
+            <img src="./images/product.jpg" alt="" />
+         </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+         <div id="forms" class="form">
+            <h6>#Giảm giá 50%</h6>
+            <div class="sale row">
+               <div class="left">
+                  <p>1.580.000 đ</p>
+                  <p>Giá chỉ còn</p>
+               </div>
+               <div class="right">
+                  <p>790.000 đ</p>
+               </div>
+            </div>
+            <form action="">
+               <input type="text" name="name" placeholder="*Tên của bạn" />
+               <input type="text" name="phone" placeholder="*Số điện thoại" onkeypress="validate(event)" />
+               <button type="submit">Đặt hàng</button>
+            </form>
+         </div>
+      </div>
+   </section>
+   <section class="section-8" id="section-8">
+      <div class="section-8-banner  pdt-50">
+         <div class="title">KIẾN THỨC CHĂM SÓC SỨC KHỎE</div>
+         <div class="section-8-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus
+            vehicula elit vel egestas.
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="section-8-card section-8-card-1">
+                  <div class="section-8-img">
+                     <img src="./images/card.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-8-card-content">
+                     <h4>Cutting-edge products launched through Logitech-Excel</h4>
+                     <p>The Managing Director & Cluster Head India & South-West Asia at Logitech Sumanta Datta.
+                     </p>
+                     <a href="#">
+                        <h6>Xem thêm</h6>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="section-8-card section-8-card-2">
+                  <div class="section-8-img">
+                     <img src="./images/card.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-8-card-content">
+                     <h4>Cutting-edge products launched through Logitech-Excel</h4>
+                     <p>The Managing Director & Cluster Head India & South-West Asia at Logitech Sumanta Datta.
+                     </p>
+                     <a href="#">
+                        <h6>Xem thêm</h6>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="section-8-card section-8-card-3">
+                  <div class="section-8-img">
+                     <img src="./images/card.png" alt="" class="w-100">
+                  </div>
+                  <div class="section-8-card-content">
+                     <h4>Cutting-edge products launched through Logitech-Excel</h4>
+                     <p>The Managing Director & Cluster Head India & South-West Asia at Logitech Sumanta Datta.
+                     </p>
+                     <a href="#">
+                        <h6>Xem thêm</h6>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <div class="container-fluid footer-bg">
+         <div class=" footer-content">
+            <div class="row">
+               <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                  <div class="info left">
+                     <a href="index.html"> <img src="./images/logo_bottom.png" class="logo-bottom"></a>
+                     <h5>Được phân phối chính thức bởi</h5>
+                     <h3>CÔNG TY TNHH SOJI LABS</h3>
+                     <h5>Trụ sở: Tầng 10, tòa nhà Phước Thành, 199 Điện Biên Phủ, Phường 15,<br> Quận Bình Thạnh,
+                        Thành phố Hồ Chí Minh, Việt Nam
+                     </h5>
+                     <div class="row info-contact">
+                        <i class="fa fa-envelope"></i>
+                        <h6 class="mr-107"><a href="mailto:shop@soji.asia">shop@soji.asia</a></h6>
+                        <i class="fa fa-phone"></i>
+                        <h6><a href="tel:+02873070789">028 7307 0789</a></h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                  <div class="right row justify-content-between mt-3-md">
+                     <div class="col-lg-12 col-md-12 col-12">
+                        <div class="info-socal">
+                           <h3>Kết nối với Gercena Diabets</h3>
+                           <div class="social row">
+                              <a href="https://www.facebook.com/sojilabs/" target="_blank">
+                                 <img src="./images/facebook.svg">
+                              </a>
+                              <a href="https://www.youtube.com/channel/UC2W5tjk6wJAK2K2EUuvMMSQ" target="_blank">
+                                 <img src="./images/youtube.svg">
+                              </a>
+                              <a href="https://www.instagram.com/sojilabs_official/" target="_blank">
+                                 <img src="./images/instagram.svg">
+                              </a>
+                              <a href="https://twitter.com/SojiLabs" target="_blank">
+                                 <img src="./images/twitter.svg">
+                              </a>
+                              <a href="" target="_blank">
+                                 <img src="./images/whatsapp.svg">
+                              </a>
+                           </div>
+                           <p style="padding:10px;padding-left:0;font-style:italic">*Thực phẩm này không phải
+                              là thuốc, không có tác dụng thay thế thuốc chữa bệnh.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p><em>Copyright 2020@Soji Labs</em></p>
+         </div>
+      </div>
+   </footer>
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/bootstrap5.js"></script>
+   <script src="./js/aos.js"></script>
+   <script src="./js/main.js"></script>
+   <script>
+      new AOS.init();
+   </script>
+</body>
+
+</html>

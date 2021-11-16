@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta property="og:type" content="website">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="Cache-control" content="no-cache">
+   <meta http-equiv="Expires" content="-1">
+   <meta name="robots" content="noodp,noydir">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="google-site-verification" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:site_name" content="Gercena">
+   <meta property="og:url" content="">
+   <meta name="description" content="Gercena">
+   <meta property="og:description" content="Gercena">
+   <meta property="og:title" content="Gercena">
+   <link rel="icon" type="image/png" href="./images/product.jpg">
+   <title>Gercena</title>
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/font-awesome.min.css">
+   <link rel="stylesheet" href="./css/aos.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <!-- <div class="container-fluid"> -->
+   <a class="navbar-brand" href="./index.html">
+      <img src="./images/logo.png" alt="" />
+   </a>
+   <div class="d-flex align-items-center">
+      <div class="dropdown dropdown-mobile">
+         <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            <img src="./images/vn.png" alt="" />
+         </a>
+         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+               <a class="dropdown-item" href="#">
+                  <img src="./images/vn.png" alt="" />
+                  <span>Tiếng Việt</span>
+               </a>
+            </li>
+            <li>
+               <a class="dropdown-item" href="#">
+                  <img src="./images/germany.svg" alt="" />
+                  <span>Tiếng Đức</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <button id="default" class="navbar-toggler" type="button" data-toggle="collapse"
+         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+         aria-label="Toggle navigation">
+         <i class="fa fa-bars text-dark"></i>
+      </button>
+   </div>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="./index.html">TRANG CHỦ</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link active" href="./gioithieu.html">GIỚI THIỆU</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="./cauhoi.html">CÂU HỎI THƯỜNG GẶP</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="./blog.html">KIẾN THỨC SỨC KHỎE</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="./lienhe.html">LIÊN HỆ</a>
+         </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-expanded="false">
+               <img src="./images/vn.png" alt="" />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <li>
+                  <a class="dropdown-item" href="#">
+                     <img src="./images/vn.png" alt="" />
+                     <span>Tiếng Việt</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="dropdown-item" href="#">
+                     <img src="./images/germany.svg" alt="" />
+                     <span>Tiếng Đức</span>
+                  </a>
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <button id="shown" class="navbar-toggler" type="button" data-toggle="collapse"
+         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+         aria-label="Toggle navigation">
+         <i class="fa fa-times text-white"></i>
+      </button>
+   </div>
+   <!-- </div> -->
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog section-7">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">
+                  Đặt hàng chính hãng
+               </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div id="forms" class="form modal-body">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+               <h6>#Giảm giá 50%</h6>
+               <div class="sale row">
+                  <div class="left">
+                     <p>1.180.000 đ</p>
+                     <p>Giá chỉ còn</p>
+                  </div>
+                  <div class="right">
+                     <p>590.000 đ</p>
+                  </div>
+               </div>
+               <form action="">
+                  <input type="text" name="name" placeholder="*Tên của bạn" />
+                  <input type="text" name="phone" placeholder="*Số điện thoại" onkeypress="validate(event)" />
+                  <button type="submit">Đặt hàng</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End modal -->
+</nav>
+<div class="section-gt">
+   <div class="row">
+      <div class="col-lg-7 col-md-12 pd-l">
+         <div class="section-gt-content">
+            <div class="section-gt-title">TẠI SAO NÊN DÙNG GERCENA DIABETS</div>
+            <p>Bệnh tiểu đường là một căn bệnh diễn biến thầm lặng vì thế mà chúng ta thường hay chủ quan về sự nguy
+               hiểm của nó. Đối với người bệnh tiểu đường, việc áp dụng một phương pháp khoa học với chế độ dinh
+               dưỡng phù hợp là rất cần thiết. <br><br>
+               Hiện nay, không khó để mọi người tìm thấy một sản phẩm hỗ trợ tiểu đường trên thị trường. Tuy nhiên,
+               không phải dòng sản phẩm nào cũng đem lại hiệu quả cho người sử dụng và nếu bạn không lựa chọn được
+               sản phẩm phù hợp thì bệnh không những không được kiểm soát mà quá trình chữa trị còn kéo dài hơn.
+               Một sản phẩm hỗ trợ tiểu đường có nguyên liệu nhập từ Mỹ an toàn, hiệu quả sẽ giúp khách hàng cảm
+               thấy yên tâm khi sử dụng đó chính là Gercena DIABETS.
+            </p>
+         </div>
+      </div>
+      <div class="col-lg-5 col-md-12 pd-r">
+         <div class="section-gt-img1">
+            <img src="./images/product-gt.png" alt="" class="w-100">
+         </div>
+      </div>
+   </div>
+   <p class="bottom-content">Gercena DIABETS là giải pháp hiệu quả giúp ổn định đường huyết, bổ sung dinh dưỡng đầy đủ
+      và cân đối cho người tiểu đường. Đây là sản phẩm có nguyên liệu Wellmune Soluble nhập khẩu từ Mỹ với 100% thành
+      phần từ thiên nhiên, hoàn toàn an toàn, không có tác dụng phụ, giúp hỗ trợ hạn chế tăng đường huyết và giúp ổn
+      định đường huyết, hỗ trợ giảm nguy cơ biến chứng do tiểu đường được các chuyên gia dinh dưỡng hàng đầu khuyên
+      dùng.
+   </p>
+</div>
+<div id="section-5" class="section-5 banner-section5">
+   <div class="row">
+      <div class="col-xl-5 col-lg-5 col-md-12 col-12 section-5-left">
+         <div class="section-5-title">
+            <h4>#Cảm Nhận Từ Khách Hàng
+            </h4>
+         </div>
+         <div class="section-5-clip">
+
+            <iframe class="section-5-video" width="1237" height="696" src="https://www.youtube.com/embed/8-ROoDovMSk"
+               frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+         </div>
+      </div>
+      <div class="col-xl-7 col-lg-7 col-md-12 col-12 section-5-right">
+         <div class="section-5-content">
+            <h2>Cách Kiểm Soát Bệnh Đái Thai Đường Thành Công</h2>
+            <h6> Chia Sẻ Của Chú. Nguyễn Văn A - Tại TP.HCM</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+               labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+               et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est <br><br>
+               Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+               eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+<footer>
+   <div class="container-fluid footer-bg">
+      <div class=" footer-content">
+         <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+               <div class="info left">
+                  <a href="index.html"> <img src="./images/logo_bottom.png" class="logo-bottom"></a>
+                  <h5>Được phân phối chính thức bởi</h5>
+                  <h3>CÔNG TY TNHH SOJI LABS</h3>
+                  <h5>Trụ sở: Tầng 10, tòa nhà Phước Thành, 199 Điện Biên Phủ, Phường 15,<br> Quận Bình Thạnh,
+                     Thành phố Hồ Chí Minh, Việt Nam
+                  </h5>
+                  <div class="row info-contact">
+                     <i class="fa fa-envelope"></i>
+                     <h6 class="mr-107"><a href="mailto:shop@soji.asia">shop@soji.asia</a></h6>
+                     <i class="fa fa-phone"></i>
+                     <h6><a href="tel:+02873070789">028 7307 0789</a></h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+               <div class="right row justify-content-between mt-3-md">
+                  <div class="col-lg-12 col-md-12 col-12">
+                     <div class="info-socal">
+                        <h3>Kết nối với Gercena Diabets</h3>
+                        <div class="social row">
+                           <a href="https://www.facebook.com/sojilabs/" target="_blank">
+                              <img src="./images/facebook.svg">
+                           </a>
+                           <a href="https://www.youtube.com/channel/UC2W5tjk6wJAK2K2EUuvMMSQ" target="_blank">
+                              <img src="./images/youtube.svg">
+                           </a>
+                           <a href="https://www.instagram.com/sojilabs_official/" target="_blank">
+                              <img src="./images/instagram.svg">
+                           </a>
+                           <a href="https://twitter.com/SojiLabs" target="_blank">
+                              <img src="./images/twitter.svg">
+                           </a>
+                           <a href="" target="_blank">
+                              <img src="./images/whatsapp.svg">
+                           </a>
+                        </div>
+                        <p style="padding:10px;padding-left:0;font-style:italic">*Thực phẩm này không phải là
+                           thuốc, không có tác dụng thay thế thuốc chữa bệnh.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p><em>Copyright 2020@Soji Labs</em></p>
+      </div>
+   </div>
+</footer>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap5.js"></script>
+<script src="./js/aos.js"></script>
+<script src="./js/main.js"></script>
+<script>
+   new AOS.init();
+</script>
+</body>
+
+</html>
